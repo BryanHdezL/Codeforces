@@ -5,26 +5,19 @@ using namespace std;
 
 // Macros
 #define IO ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
-#define li long int
-#define lli long long int
-#define all(var) var.begin(), var.end()
-
-// Funciones.
-// static_cast <tipo> (variable)
-// cout << fixed << setprecision(12);
 
 // Funcion principal.
 int main() {
     IO;
     // Variables
     int tt; cin >> tt;
-    int n, j = 0;
+    int n;
     string s, aux = "";
     char c;
     // Casos
     while (tt--) {
         // Leemos e inicializamos variables.
-        aux="";
+        aux = "";
         cin >> n;
         cin >> s;
         c = tolower(s[0]);
@@ -38,10 +31,7 @@ int main() {
             }
         }
         // Mostramos el resultado
-        if (aux == "meow")
-            cout << "YES" << endl;
-        else
-            cout << "NO" << endl;
+        (aux == "meow") ? (cout << "YES" << endl) : (cout << "NO" << endl);
     }
     // Fin del programa
     return 0;
